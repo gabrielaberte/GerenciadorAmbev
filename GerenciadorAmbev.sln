@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorAmbev.Domain", "GerenciadorAmbev.Domain\GerenciadorAmbev.Domain.csproj", "{83D8FBF3-38BF-4FD0-9B85-7F114911FA1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorAmbev.ConsoleApp", "GerenciadorAmbev.ConsoleApp\GerenciadorAmbev.ConsoleApp.csproj", "{2CEC7284-C533-46B5-BC9D-01387611373C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorAmbev.Data", "GerenciadorAmbev.ConsoleApp\GerenciadorAmbev.Data.csproj", "{2CEC7284-C533-46B5-BC9D-01387611373C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
