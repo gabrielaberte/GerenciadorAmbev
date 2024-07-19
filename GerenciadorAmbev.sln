@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorAmbev.Domain", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorAmbev.Data", "GerenciadorAmbev.ConsoleApp\GerenciadorAmbev.Data.csproj", "{2CEC7284-C533-46B5-BC9D-01387611373C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmbevConexao.Cons", "AmbevConexao.Cons\AmbevConexao.Cons.csproj", "{1AFD8DDB-B11D-4192-9F68-4214E8F8E79F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2CEC7284-C533-46B5-BC9D-01387611373C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CEC7284-C533-46B5-BC9D-01387611373C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CEC7284-C533-46B5-BC9D-01387611373C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AFD8DDB-B11D-4192-9F68-4214E8F8E79F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AFD8DDB-B11D-4192-9F68-4214E8F8E79F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AFD8DDB-B11D-4192-9F68-4214E8F8E79F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AFD8DDB-B11D-4192-9F68-4214E8F8E79F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
