@@ -14,5 +14,14 @@ namespace GerenciadorAmbev.Domain.Model
         public int IdProfessor { get; set; }
         public Professor Professor { get; set; }
         public List<TurmaAluno> TurmaAlunos { get; set; }
+
+        public static Turma NovaTurma(string nome, int idProf)
+        {
+            //nao setar Professor pois é chave estrangeira
+            var turma = new Turma();
+            turma.Nome = nome;
+            turma.IdProfessor = idProf;
+            return turma;
+        }
     }
 }
