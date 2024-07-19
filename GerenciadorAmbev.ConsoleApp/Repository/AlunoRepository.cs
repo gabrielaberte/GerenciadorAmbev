@@ -35,7 +35,12 @@ namespace GerenciadorAmbev.Data.Repository
             contexto.Aluno.Remove(aluno);
             contexto.SaveChanges();
         }
+      public void Dispose()
+    {
+            contexto.Dispose();
+    } 
     }
 
+ 
 
 }

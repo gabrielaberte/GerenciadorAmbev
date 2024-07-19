@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GerenciadorAmbev.ConsoleApp\GerenciadorAmbev.Data.csproj" />
+    <ProjectReference Include="..\GerenciadorAmbev.Domain\GerenciadorAmbev.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
