@@ -5,35 +5,35 @@ class Program
 {
     static void Main(string[] args)
     {
-        IncluirAluno();
-        var alunos = ConsultarTodosAlunos();
-        if (alunos?.Count > 0) { 
-            AlterarNomeAluno(alunos[0]);
-            ExcluirAluno(alunos[1].Id);
+        IncluirProfessor();
+        var prof = ConsultarTodosProfessor();
+        if (prof?.Count > 0) {
+            AlterarNomeProfessor(prof[0]);
+            ExcluirProfessor(prof[1].Id);
         }
 
     }
 
-    private static void IncluirAluno()
+    private static void IncluirProfessor()
     {
-        var repoAluno = new AlunoRepository();
-        repoAluno.Incluir(Aluno.NovoAluno("Diana"));
-        repoAluno.Incluir(Aluno.NovoAluno("Billy"));
+        var repoProfessor = new ProfessorRepository();
+        repoProfessor.Incluir(Professor.NovoProfessor("Prof Thamy", "email", Turno.Manha));
+        repoProfessor.Incluir(Professor.NovoProfessor("Prof Gab", "email", Turno.Tarde));
     }
-    private static void AlterarNomeAluno(Aluno aluno)
+    private static void AlterarNomeProfessor(Professor prof)
     {
-        var repoAluno = new AlunoRepository();
-        repoAluno.Alterar(aluno.AlterarNome("Diana Golden"));
+        var repoProfessor = new ProfessorRepository();
+        repoProfessor.Alterar(prof.AlterarNome("Prof Thami"));
     }
-    private static List<Aluno> ConsultarTodosAlunos()
+    private static List<Professor> ConsultarTodosProfessor()
     {
-        var repoAluno = new AlunoRepository();
-        return repoAluno.SelecionarTudo();
+        var repoProfessor = new ProfessorRepository();
+        return repoProfessor.SelecionarTudo();
     }
 
-    private static void ExcluirAluno(int id)
+    private static void ExcluirProfessor(int id)
     {
-        var repoAluno = new AlunoRepository();
-        repoAluno.Excluir(id);
+        var repoProfessor = new ProfessorRepository();
+        repoProfessor.Excluir(id);
     }
 }

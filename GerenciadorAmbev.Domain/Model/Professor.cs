@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GerenciadorAmbev.Domain.Model
+﻿namespace GerenciadorAmbev.Domain.Model
 {
     public class Professor
     {
@@ -23,8 +17,18 @@ namespace GerenciadorAmbev.Domain.Model
             prof.Nome = nome;
             prof.Email = email;
             prof.Turno = turno;
+            prof.Banco = "BB";
+            prof.Agencia = "01";
+            prof.Conta = "123";
 
             return prof;
+        }
+
+        public Professor AlterarNome(string novoNome)
+        {
+            Nome = novoNome;
+
+            return this;
         }
     }
 }
