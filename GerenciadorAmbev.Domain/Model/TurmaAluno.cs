@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace GerenciadorAmbev.Domain.Model
 {
-    public class Aluno
+    public class TurmaAluno
     {
         public int Id { get; set; }
-        public string Nome { get; set; }
-        public string Ativo { get; set; }
-        public List<TurmaAluno> TurmaAluno { get; set; }
+        public int IdAluno { get; set; }
+        public Aluno Aluno { get; set; }
+        public int IdTurma { get; set; }
+        public Turma Turma { get; set; }    
+
+
     }
 }

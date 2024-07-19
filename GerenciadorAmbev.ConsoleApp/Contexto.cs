@@ -9,6 +9,7 @@ namespace GerenciadorAmbev.ConsoleApp
         public DbSet<Aluno> Aluno { get; set; }
         public DbSet<Professor> Professor {  get; set; }
         public DbSet<Turma> Turma { get; set; }
+        public DbSet<TurmaAluno> TurmaAluno { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -21,6 +22,7 @@ namespace GerenciadorAmbev.ConsoleApp
             modelBuilder.ApplyConfiguration(new AlunoMap());
             modelBuilder.ApplyConfiguration(new ProfessorMap());
             modelBuilder.ApplyConfiguration(new TurmaMap());
+            modelBuilder.ApplyConfiguration(new TurmaAlunoMap());
             base.OnModelCreating(modelBuilder);
         }
     }

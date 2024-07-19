@@ -13,5 +13,6 @@ namespace GerenciadorAmbev.Domain.Model
         public string Descricao { get; set; }
         public int IdProfessor { get; set; }
         public Professor Professor { get; set; }
+        public List<TurmaAluno> TurmaAlunos { get; set; }
     }
 }
